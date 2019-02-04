@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,35 @@
     <!-- <meta http-equiv="refresh" content="5;url=http://www.naver.com/"> -->
     <title>Document</title>
 </head>
+
 <body>
     <script>
         let req = new XMLHttpRequest();
-        req.open('POST','openapi.naver.com/v1/datalab/search');
-        req.setRequestHeader('Access-Control-Allow-Origin','*');
-        req.setRequestHeader('Content-Type','application/json');
+        req.open('POST', 'openapi.naver.com/v1/datalab/search');
+        req.setRequestHeader('Access-Control-Allow-Origin', '*');
+        req.setRequestHeader('Content-Type', 'application/json');
         req.setRequestHeader('X-Naver-Client-Id', '9bQxi6RNQGf3G3PEknHS');
-        req.setRequestHeader('X-Naver-Client-Secret','YOX5qCK8mz');
+        req.setRequestHeader('X-Naver-Client-Secret', 'YOX5qCK8mz');
         // req.setRequestHeader('Content-Length','360');
-        req.send(null);
-        if(req.status == 200){
+        var body = {
+            "startDate": "2018-12-01",
+            "endDate": "2019-01-01",
+            "timeUnit": "month",
+            "keywordGroups": [
+                {
+                    "groupName": "한글",
+                    "keywords": [
+                        "알함브라"
+                    ]
+                }
+            ]
+
+        };
+        req.send(body);
+        if (req.status == 200) {
             alert(req.responseText);
         }
     </script>
 </body>
+
 </html>
