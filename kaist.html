@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #2A2D34;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            /* overflow: hidden; */
+        }
+
+        ul>li {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+            /* overflow: hided; */
+            /* float: left; */
+        }
+
+        img {
+            width: 100px;
+        }
+
+        img[data-checked='true'] {
+            opacity: 0.2;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049517.jpg />
+            <p>그곳은, 소, 와인, 바다가 모두 빨갛다 : 언어로 보는 문화</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049515.jpg />
+            <p>반란의 도시</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049518.jpg />
+            <p>키친 컨피덴셜</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049511.jpg />
+            <p>사람의 자리 : 삶을 지켜내는 과학을 위하여</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049508.jpg />
+            <p>로봇의 자리 : 사람이 아닌 것들과 함께 사는 방법</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049108.jpg />
+            <p>불쌍한 사랑 기계 : 김혜순 시집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049106.jpg />
+            <p>여론</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049104.jpg />
+            <p>데카르트의 오류 : 감정, 이성, 그리고 인간의 뇌</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049101.jpg />
+            <p>1945년 이후 한국 현대미술 = Moving reflection, Korean art since 1945</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049099.jpg />
+            <p>공정하다는 착각 : 능력주의는 모두에게 같은 기회를 제공하는가</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049097.jpg />
+            <p>힐빌리의 노래</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049095.jpg />
+            <p>환희의 아이 : 덴도 아라타 장편소설</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049093.jpg />
+            <p>호모 이그니스, 불을 찾아서 : 횃불에서 원자로까지 경이로움과 두려움의 패러독스 = Homo ignis</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049087.jpg />
+            <p>생명의 차창에서</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049020.jpg />
+            <p>말랑말랑한 힘 : 함민복 시집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049016.jpg />
+            <p>말끝이 당신이다 : 주변을 보듬고 세상과 연대하는 말하기의 힘</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049013.jpg />
+            <p>클라라와 태양 : 가즈오 이시구로 장편소설</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049012.jpg />
+            <p>천문학자는 별을 보지 않는다</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049010.jpg />
+            <p>자연 기계 : 인간과 자연, 환경과 과학기술에 대한 거대한 질문</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049007.jpg />
+            <p>슬픔을 공부하는 슬픔 : 신형철 산문</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049006.jpg />
+            <p>(송민령의) 뇌과학 이야기 : 앎과 삶을 연결하는 우리 시대의 뇌과학 = Neuroscience</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049004.jpg />
+            <p>생명 가격표 : 각자 다른 생명의 값과 불공정성에 대하여</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049002.jpg />
+            <p>한국 현대사</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049000.jpg />
+            <p>뮤지코필리아 : 뇌와 음악에 관한 이야기</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048998.jpg />
+            <p>물은 H2O인가? : 증거, 실재론, 다원주의</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048996.jpg />
+            <p>배달의민족은 배달하지 않는다 : 라이더가 말하는 한국형 플랫폼 노동</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048994.jpg />
+            <p>루머</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048992.jpg />
+            <p>내가 빛나는 순간</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048990.jpg />
+            <p>나는 매일 감동을 만나고 싶다 : 히사이시 조가 말하는 창조성의 비밀</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048987.jpg />
+            <p>내 몸속에 잠든 이 누구신가 : 김선우 시집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048986.jpg />
+            <p>가라앉은 자와 구조된 자 : 아우슈비츠 생존 작가 프리모 레비가 인생 최후에 남긴 유서</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048984.jpg />
+            <p>R. U. R. : 로줌 유니버설 로봇</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048982.jpg />
+            <p>1945 히로시마</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048980.jpg />
+            <p>개구리</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048978.jpg />
+            <p>감시 자본주의 시대 : 권력의 새로운 개척지에서 벌어지는 인류의 미래를 위한 투쟁</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048975.jpg />
+            <p>AI 슈퍼파워 : 중국, 실리콘밸리 그리고 새로운 세계질서</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048973.jpg />
+            <p>생각에 관한 생각 : 우리의 행동을 지배하는 생각의 반란</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048968.jpg />
+            <p>미디어의 이해 : 인간의 확장</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048966.jpg />
+            <p>농경의 배신 : 길들이기, 정착생활, 국가의 기원에 관한 대항서사</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048964.jpg />
+            <p>AI 최강의 수업</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048962.jpg />
+            <p>계획된 불평등 : 여성 기술인 배제가 불러온 20세기 영국 컴퓨터 산업의 몰락</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048959.jpg />
+            <p>연구원은 무엇으로 사는가 : R&D 경영인이 말하는 조직 문화로 혁신하는 길</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048957.jpg />
+            <p>오답이라는 해답 : 과학사는 어떻게 만들어지나</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048955.jpg />
+            <p>아내를 모자로 착각한 남자</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048953.jpg />
+            <p>아이네이스</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048951.jpg />
+            <p>그리드 : 기후 위기 시대, 제2의 전기 인프라 혁명이 온다</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048942.jpg />
+            <p>구글은 어떻게 여성을 차별하는가 : 불평등과 혐오를 조장하는 알고리즘 시대의 진실을 말하다</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048940.jpg />
+            <p>공간 혁명 : 행복한 삶을 위한 공간 심리학</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048938.jpg />
+            <p>공간, 장소, 젠더</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048936.jpg />
+            <p>건축, 모두의 미래를 짓다 : 건축 너머의 세계를 향한 치열한 질문과 성찰</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048933.jpg />
+            <p>그리스 비극 걸작선 : 오이디푸스 왕 外 3대 비극작가 대표선집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048932.jpg />
+            <p>나무, 돌, 그리고 한국 건축 문명 : 동과 서, 과거와 현재를 횡단하는 건축 교양 강의</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048930.jpg />
+            <p>여름은 오래 그곳에 남아</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048926.jpg />
+            <p>왜 칸트인가 : 인류 정신사를 완전히 뒤바꾼 코페르니쿠스적 전회</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048925.jpg />
+            <p>우주적인 안녕 : 하재연 시집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048922.jpg />
+            <p>형제 : 위화 장편소설 / 1-2</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048920.jpg />
+            <p>한 명 : 김숨 장편소설</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000049506.jpg />
+            <p>파친코 : 이민진 장편소설 / 1-2</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048915.jpg />
+            <p>태어난 게 범죄 : 트레버 노아의 블랙 코미디 인생</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048913.jpg />
+            <p>지식의 역사 : 과거, 현재, 그리고 미래의 모든 지식을 찾아</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048910.jpg />
+            <p>포스트디지털 : 토픽과 지평 = Postdigital : special topics and new horizons</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048908.jpg />
+            <p>피프티 피플 : 정세랑 장편소설</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048906.jpg />
+            <p>자동화된 불평등 : 첨단 기술은 어떻게 가난한 사람들을 분석하고, 감시하고, 처벌하는가</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048904.jpg />
+            <p>자본주의는 어떻게 재난을 먹고 괴물이 되는가</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048901.jpg />
+            <p>조선에 온 서양 물건들 : 안경, 망원경, 자명종으로 살펴보는 조선의 서양 문물 수용사</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048899.jpg />
+            <p>크래프톤 웨이 : 배틀그라운드 신화를 만든 10년의 도전 = Krafton way</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048896.jpg />
+            <p>(클래식을 좋아하는) 사람이라면 꼭 알아야 할 52가지 : 음악평론가 최은규의 클래식 감상법</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048894.jpg />
+            <p>프레임 : 나를 바꾸는 심리학의 지혜</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048892.jpg />
+            <p>인류의 기원</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048890.jpg />
+            <p>유배지에서 보낸 편지</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048888.jpg />
+            <p>우리는 가난을 어떻게 외면해왔는가</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048886.jpg />
+            <p>아인슈타인의 시계, 푸앵카레의 지도 : 시간의 제국들</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048831.jpg />
+            <p>일리아스 = Ilias of Homeros</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048814.jpg />
+            <p>비행운 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048812.jpg />
+            <p>공감의 시대</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048810.jpg />
+            <p>피로사회</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048808.jpg />
+            <p>담론(談論) : 신영복의 마지막 강의</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048806.jpg />
+            <p>실격당한 자들을 위한 변론</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048804.jpg />
+            <p>실험실 생활 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048802.jpg />
+            <p>뇌의 왈츠 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048799.jpg />
+            <p>사피엔스 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048797.jpg />
+            <p>시계가 없는 나라 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048795.jpg />
+            <p>48년 후 이 아이는 우리나라 최초의 인공위성을 쏘아 올립니다 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048793.jpg />
+            <p>보이지 않는 여자들 </p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048791.jpg />
+            <p>뉴스의 시대 : 뉴스에 대해 우리가 알아야 할 모든 것</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048788.jpg />
+            <p>우리의 소원은 전쟁 : 장강명 장편소설</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048786.jpg />
+            <p>프로젝트 헤일메리</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048784.jpg />
+            <p>이타적 유전자</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048782.jpg />
+            <p>언어본능 : 마음은 어떻게 언어를 만드는가?</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048780.jpg />
+            <p>아픔이 길이 되려면 : 정의로운 건강을 찾아 질병의 사회적 책임을 묻다</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048777.jpg />
+            <p>호모 사피엔스, 그 성공의 비밀 : 문화는 어떻게 인간의 진화를 주도하며 우리를 더 영리하게 만들어왔는가</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048776.jpg />
+            <p>컴퓨터과학이 여는 세계 : 세상을 바꾼 컴퓨터, 소프트웨어의 원천 아이디어 그리고 미래</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048773.jpg />
+            <p>오직 독서뿐 : 허균에서 홍길주까지 옛사람 9인의 핵심 독서 전략</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048769.jpg />
+            <p>문학과 예술의 사회사 / 1-4</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048768.jpg />
+            <p>타워 : 배명훈 연작소설집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048766.jpg />
+            <p>이제 고양이와 살기 이전의 나로 돌아갈 수 없다</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048764.jpg />
+            <p>음악이 좋아서, 음악을 생각합니다 : 음악이라고 부르는 모든 것들에 대하여</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048762.jpg />
+            <p>인류세</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048760.jpg />
+            <p>악기들의 도서관 : 김중혁 소설</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048758.jpg />
+            <p>생각의 일요일들 : 은희경 산문집</p>
+        </li>
+        <li><img src=https://library.kaist.ac.kr/bookcover/0000048754.jpg />
+            <p>그들의 눈은 신을 보고 있었다</p>
+        </li>'
+    </ul>
+    <script>
+        const images = document.querySelectorAll('img');
+
+        let checkedList = localStorage.getItem('checkedList');
+        checkedList = checkedList ? JSON.parse(checkedList) : (new Array(images.length)).fill(false);
+
+        images.forEach((image, index) => {
+            image.id = index;
+            image.setAttribute('data-checked', checkedList[index]);
+            image.addEventListener('click', (e) => {
+                const target = e.currentTarget;
+                const opposite = !checkedList[target.id]
+                checkedList[target.id] = opposite;
+                image.setAttribute('data-checked', opposite);
+                localStorage.setItem('checkedList', JSON.stringify(checkedList));
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>
