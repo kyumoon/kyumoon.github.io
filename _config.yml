@@ -1,1 +1,6 @@
 theme: jekyll-theme-slate
+source: docs
+include:
+  - .well-known
+  - .nojekyll
+  - .*
